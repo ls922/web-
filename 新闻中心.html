@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .foot{position: relative;top: 30px;}
+        .content_5{font-size: 20px;margin-left: 100px;}
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑";
+        }
+        .header_login,.header_banner,.header_menu{
+            width: 100%;
+        }
+        .header_login{
+            height: 40px;
+            background: url("images/login_bg.jpg") repeat-x;
+        }
+        .header_login+div{
+            height: 1px;
+            width: 100%;
+            background-color: red;
+        }
+        .header_banner{
+            height: 144px;
+            background: url("images/banner_bg.jpg") repeat-x;
+        }
+        .header_menu{
+            height: 45px;
+            background: url("images/menu_bg.jpg") repeat-x;
+        }
+        .header_banner_1,.header_login_1,.header_menu_1{
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header_login_1{height: 40px}
+        .header_banner_1{height: 144px; background-image: url("images/banner_china.jpg");}
+        .header_menu_1{height: 45px}
+        .header_login_1 div{
+            height: 40px;
+            width: 100px;
+            text-align: center;
+            margin-top: 5px;
+            margin-left: 25px;
+            font: italic bolder 18px "微软雅黑";
+            color: #083487;
+            float: left;
+        }
+        .header_login_1 form{float: left}
+        .header_login_1 form input{
+            margin-top:8px;
+            width: 110px;
+            margin-right: 10px;
+            margin-left: 3px;
+        }
+        .header_login_1 form input+input+input{
+            width: 50px;
+            background-color:#083487 ;
+            color: white;
+            margin-left: -5px;
+            border: none;
+            border-radius: 5px;
+        }
+        .header_login_1 form input+input+input+input{
+            background-color:#42ACDE;
+        }
+        .header_login_1 form+div{
+            margin-left: 80px;
+        }
+        .header_login_1 form+div+form input{
+            width: 100px;
+            margin-left: 3px;
+            margin-right: 5px;
+        }
+        .header_login_1 form+div+form input+input{
+            width: 50px;
+            background-color:#083487 ;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .header_menu_01{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .header_menu_01 li{
+            width: 99px;
+            height: 43px;
+            float: left;
+            color: white;
+            line-height: 43px;
+            text-align: center;
+            border-top: 1px solid #61B3E5;
+            border-right: 1px solid #61B3E5;
+        }
+        .header_menu_01 li:hover{
+            background-color: #FFCC36;
+            color: #AA2B2B;
+        }
+        .header_menu_01 li:hover .header_menu_02{display: block}
+        .header_menu_02{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            z-index: 1;
+            color: #073285;
+            display: none;
+        }
+        .header_menu_02 li{
+            width: 119px;
+            height: 35px;
+            line-height: 35px;
+            border-right:1px solid #AA2B2B ;
+            float: left;
+            background-color: #A1DBFF;
+            color: #073285;
+        }
+        .header_menu_02 li span{color: red}
+        .header_menu_02 li:hover{background-color:#AA2B2B;color: white }
+
+
+
+        .content{
+            width: 1000px;
+            height: 1000px;
+            margin: 0 auto;
+        }
+        .content_1{
+            width: 1000px;
+            height: 140px;
+            background-image: url("images/banner.jpg") ;
+            background-position:0  1180px;
+        }
+        .content_2{
+            margin-top: -10px;
+        }
+        .foot{
+            width: 100%;
+            background-color: #083588;
+            font-family:"黑体" ;
+        }
+        .foot2-0{
+            float: left;
+            margin-left: 20px;
+        }
+        .foot2{
+            padding: 8px;
+            margin-left: 20px;
+            margin: 0 auto;
+        }
+        .foot2{width: 1000px;margin: 0 auto}
+        .foot2-1{
+            background-image:url("../images/及邮意用.jpg");width: 167px;height: 61px;
+            background-position: 0 0px;float: left;
+            margin-right: 30px;
+        }
+        .foot21:hover{display: block; }
+        .foot2-1:hover .foot21{display: none;}
+        .foot2-2{
+            background-image:url("../images/及邮意用.jpg");width: 167px;height: 61px;
+            background-position: 0 61px;float: left;
+            margin-right: 30px;
+        }
+        .foot22:hover{display: block; }
+        .foot2-2:hover .foot22{display: none;}
+        .foot2-3{
+            background-image:url("../images/及邮意用.jpg");width: 167px;height: 61px;
+            background-position: 0 122px;float: left;
+            margin-right: 30px;
+        }
+        .foot23:hover{display: block; }
+        .foot2-3:hover .foot23{display: none;}
+        .foot2-4{
+            background-image:url("../images/及邮意用.jpg");width: 167px;height: 61px;
+            background-position: 0 183px;float: left;
+            margin-right: 30px;
+        }
+        .foot24:hover{display: block; }
+        .foot2-4:hover .foot24{display: none;}
+        .foot3{
+            clear: left;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .foot4{
+            margin-left: 80px;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .list1 li,.list2 li,.list3 li,.list4 li,.list5 li{list-style: none;color:#79C2E5;margin-top: 3px; }
+        .list1,.list2,.list3,.list4,.list5{float: left;margin-left: 50px;}
+        .list1 .list1-1{font-family: "华文隶书";font-size: 23px;color: white;}
+        .list2 .list2-1,.list3 .list3-1,.list4 .list4-1,.list5 .list5-1{color: white;}
+        .foot5{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .foot6{
+            color: #A7CAEA;
+            margin-left: 130px;
+            width: 1000px;
+            text-align: center;
+            font-size: 15px;
+            margin-top: 15px;
+            margin: 0 auto;
+        }
+        .foot{position: relative;top: 30px;}
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="header_login">
+        <div class="header_login_1">
+            <div>用户登陆</div>
+            <form action="" method="get">
+                用户名<input type="text" name="userName" >
+                密码<input type="password" name="pwd">
+                <input type="submit" name="login" value="登陆">
+                <input type="submit" name="rst" value="注册">
+            </form>
+            <div>全站检索</div>
+            <form action="" method="get">
+                关键字<input type="text" name="gjz" >
+                <input type="submit" name="sousuo" value="搜索">
+            </form>
+        </div>
+    </div>
+    <div></div>
+    <div class="header_banner">
+        <div class="header_banner_1"></div>
+    </div>
+    <div class="header_menu">
+        <div class="header_menu_1">
+            <ul class="header_menu_01">
+                <li>首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</li>
+                <li>中心概况
+                    <ul class="header_menu_02">
+                        <li><span>></span> 中心简介</li>
+                        <li><span>></span> 组织机构</li>
+                        <li><span>></span> 联系我们</li>
+                        <li><span>></span> 免责声明</li>
+                    </ul>
+                </li>
+                <li>新闻中心
+                    <ul class="header_menu_02">
+                        <li><span>></span> 中心新闻</li>
+                        <li><span>></span> 业内要闻</li>
+                        <li><span>></span> 图片新闻</li>
+                        <li><span>></span> 公告通知</li>
+                    </ul>
+                </li>
+                <li>政策法规</li>
+                <li>战略合作</li>
+                <li>信息资源</li>
+                <li>专家数据库</li>
+                <li>科研成果</li>
+                <li>校企合作</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="content">
+    <div class="content_1"></div>
+    <div class="content_2"><img src="images/中心新闻.jpg"></div>
+    <div class="content-3"><img src="images/题目.jpg"></div>
+    <div class="content_4"><img src="images/线.jpg"></div>
+    <div class="content_5">
+        　　6月19日下午2：30，“中俄人文合作协同创新中心”培育组建工作汇报会在我校外<br>事处多功能厅举行。省教育厅副厅长辛宝忠，省教育厅科技处处长韩延平、副处长王明<br>福，我校文科学院院长、主管科研副院长，中俄学院、俄罗斯研究院、俄罗斯语言文学<br>与文化研究中心主任、文化哲学研究中心负责人，各文科国家级重点学科、省级重点学<br>科、校级重点学科、硕士点培育重点学科、校院共建重点学科带头人及其各方向带头人,<br>社会科学处、重点建设与发展工作处全体人员参加了会议。张政文校长出席会议,<br>并就“中俄人文合作协同创新中心”培育组建工作进行了汇报。<br><br>
+        　　张政文校长首先对“中俄人文合作协同创新”这一主题确立的原因进行了阐述。张<br>校长指出，中俄人文合作作为中俄全面战略协作伙伴关系的重要领域和最重要的支撑<br>点，国家在涉及中俄人文合作战略层面尚有许多问题急需解决。作为以全方位对俄研究<br>为特色的省部共建重点高校，黑龙江大学有责任、有能力为中俄人文合作战略作出贡<br>献。张校长还就中俄人文合作协同创新的主要设计中的主要目标及工作路径、重点工作领<br>领域以及下一步工作的计划进行了扼要的汇报。<br><br>
+        　　随后，辛宝忠副厅长针对我校“中俄人文合作协同创新中心”的构建工作提出了指<br>导性建议。辛厅长首先介绍了高等学校创新能力提升计划（“2011计划”）的由来与核<br>心内容，并对我校在这项计划中体现的高度的敏锐性和所做出的努力表示充分肯定。同<br>时，要求我校在下一阶段的构建工作进一步展现中俄人文合作交流的实质性内容，满足<br>“国家急需，世界一流”的要求，体现协同、保证质量、展现成果、凝练方向，突出计<br>划的重要性与必要性。<br><br>
+        　　在认真听取辛厅长的指示后，张校长对教育厅领导的悉心指导表示衷心感谢，同时<br>对如何提炼主题、如何在人文合作的重点方向上为国家服务集中解决所需问题等方面与<br>教育厅领导和与会专家学者进行了进一步交流，并表示将全力推动“2011计划”的实<br>施。（责任编辑：张笑雷　记者：赵子彤 张瑞　摄影：仲锐 刘若冰）
+    </div>
+</div>
+
+
+
+<div class="foot">
+    <div class="d1">
+        <div class="foot2">
+            <div class="foot2-0"> <img src="images/在线交流.jpg"></div>
+            <div class="foot2-1"> <div class="foot21"><img src="images/即时通讯.jpg"></div></div>
+            <div class="foot2-2"><div class="foot22"><img src="images/邮件系统.jpg" ></div></div>
+            <div class="foot2-3"><div class="foot23"><img src="images/意见反馈.jpg"></div></div>
+            <div class="foot2-4"><div class="foot24"><img src="images/用户注册.jpg"></div></div>
+        </div>
+    </div>
+    <div class="foot3"><img src="images/线.jpg"></div>
+    <div class="foot4">
+        <ul class="list1"><li class="list1-1">友情链接</li></ul>
+        <ul class="list2"><li class="list2-1">国家相关部门 </li><li>2011计划专栏 </li><li>国家教育部 </li><li>国家科技部 </li></ul>
+        <ul class="list3"><li class="list3-1">省级相关部门 </li><li>黑龙江省教育部 </li><li>黑龙江省科技部 </li></ul>
+        <ul class="list4"><li class="list4-1">核心共建单位 </li><li>黑龙江大学 </li><li>黑龙江大学 </li></ul>
+        <ul class="list5"><li class="list5-1">其他相关单位 </li><li>黑龙江大学 </li><li>黑龙江大学 </li></ul>
+    </div>
+    <div class="foot5"><img src="images/线.jpg"></div>
+    <div class="foot6">版权所有：中俄人文合作协同创新中心 &nbsp;&nbsp; 地址：中俄人文合作协同创新中心&nbsp;&nbsp;黑ICP备000000000号<br><br>技术支持电话：0451-87960700 Email：hljhrb@163.com</div>
+</div>
+</body>
+</html>
